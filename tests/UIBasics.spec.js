@@ -8,7 +8,7 @@ test('Use of browser fixture', async ({browser})=>{
     await expect(page).toHaveTitle("Google");
 });
 
-test('Use of page fixture', async ({page})=>{
+test.only('Use of page fixture', async ({page})=>{
     await page.goto("https://www.netflix.com/in");
     console.log(await page.title());
     await expect(page).toHaveTitle("Netflix India – Watch TV Shows Online, Watch Movies Online");
